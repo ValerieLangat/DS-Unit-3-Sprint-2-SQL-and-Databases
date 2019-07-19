@@ -1,0 +1,11 @@
+BEGIN TRANSACTION;
+CREATE TABLE IF NOT EXISTS "demo" (
+	"s"	TEXT,
+	"x"	INTEGER,
+	"y"	INTEGER,
+	PRIMARY KEY("s")
+);
+INSERT INTO "demo" VALUES ('g',3,9);
+INSERT INTO "demo" VALUES ('v',5,7);
+INSERT INTO "demo" VALUES ('f',8,7);
+COMMIT;
