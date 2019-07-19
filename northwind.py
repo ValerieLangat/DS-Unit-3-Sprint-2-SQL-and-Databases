@@ -18,14 +18,14 @@ sprint_questions = ['1: What are the ten most expensive items (per unit price) i
 
 sprint_sql_queries = ["SELECT ProductName, UnitPrice FROM Product ORDER BY UnitPrice DESC LIMIT 10;",
                       "SELECT ROUND(AVG(HireDate - BirthDate),1) AS Avg_Age FROM Employee;",
-                      "SELECT CITY< AVG(HireDate - BirthDate) AS Avg_Age FROM Employee GROUP BY CITY;"]
+                      "SELECT CITY, AVG(HireDate - BirthDate) AS Avg_Age FROM Employee GROUP BY CITY;"]
 
 #Answers after running queries through DB Browser for SQLite
 print('Answers from Part Two Questions:\n')
 print('''Question One: Côte de Blaye, Thüringer Rostbratwurst, Mishi Kobe Niku, Sir Rodneys Marmalade, Carnarvon Tigers,
 Raclette Courdavault, Manjimup Dried Apples, Tarte au sucre, Ipoh Coffee, Rössle Sauerkraut \n''')
 print('''Question Two: 37.2 years old\n''')
-print('''Question Three: Query returned with all 0s. I'm sure that's wrong \n''')
+print('''Question Three: Query returned with all 0s. I'm sure that's wrong--- Figured it out. Had a typo \n''')
 
 
 #('''for i in range(len(sprint_questions)):
